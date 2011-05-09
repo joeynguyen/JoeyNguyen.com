@@ -1,0 +1,140 @@
+table {
+	font-size: 20px;
+	font-family: monospace;
+}
+
+table td {
+	-moz-box-shadow: 0 0 4px #666;
+	-webkit-box-shadow: 0 0 4px #666;
+	box-shadow: 0 0 4px #666;
+	background: #888;
+}
+
+#kbTop td:first-child {
+	border-left-width: 2px;
+}
+
+#kbSecond td:last-child {
+	border-right-width: 2px;
+}
+
+td.key {
+	padding: 30px 30px 8px 8px;
+	width: 25px;
+	border: 1px solid #C0C0C0;
+	color: #444;
+
+}
+
+td.key:hover {
+	background-color: #6BA34D;
+	cursor: pointer;
+	cursor: hand;
+}
+
+td.key:active {
+	background-color: #15ADD1;
+}
+
+td.numKey {
+	color: #C2DED9;
+	padding: 30px 30px 8px 8px;
+	width: 25px;
+	border: 1px solid #C0C0C0;
+	border-top-width: 2px;
+}
+
+td.symKey {
+	color: #C2DED9;
+	padding: 30px 30px 8px 8px;
+	width: 25px;
+	border: 1px solid #C0C0C0;
+}
+
+.del {
+	color: #C2DED9;
+	text-align: right;
+	padding: 30px 8px 8px 45px;
+	width: 46px;
+	border: 1px solid #C0C0C0;
+	border-top-width: 2px;
+}
+
+.tab {
+	color: #C2DED9;
+	padding: 30px 50px 8px 8px;
+	width: 41px;
+	border: 1px solid #C0C0C0;
+}
+
+.caps {
+	color: #C2DED9;
+	padding: 30px 55px 8px 8px;
+	width: 50px;
+	border: 1px solid #C0C0C0;
+}
+
+.enter {
+	color: #C2DED9;	
+	padding: 30px 8px 8px 30px;
+	text-align: right;
+	margin-top: 10px;
+	width: 76px;
+	border: 1px solid #C0C0C0;
+}
+
+.shiftL {
+	color: #C2DED9; 
+	padding: 30px 75px 8px 8px;
+	width: 63px;
+	border: 1px solid #C0C0C0;
+}
+
+.shiftR {
+	color: #C2DED9; 
+	text-align: right;
+	padding: 30px 8px 8px 75px;
+	width: 63px;
+	border: 1px solid #C0C0C0;
+}
+
+.COC-L {
+	color: #C2DED9;
+	padding: 30px 45px 8px 8px;
+	width: 49px;
+	border: 1px solid #C0C0C0;
+	border-bottom-width: 2px;
+}
+
+.COC-R {
+	color: #C2DED9;
+	text-align: right;
+	padding: 30px 8px 8px 45px;
+	width: 49px;
+	border: 1px solid #C0C0C0;
+	border-bottom-width: 2px; 
+}
+
+.spacebar {
+	color: #C2DED9;	
+	text-align: center;
+	padding: 30px 80px 8px 80px;
+	margin-right: 0px;
+	width: 160px;
+	border: 1px solid #C0C0C0;
+	border-bottom-width: 2px;
+}
+
+.borderLeft {
+	border-left-width: 2px;
+}
+
+.borderRight {
+	border-right-width: 2px;
+}
+
+.blue {
+background-color: #15ADD1}
+
+.pressed {color: #15ADD1;}
+.pressed2 {color: #C2DED9;}

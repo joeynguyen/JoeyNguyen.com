@@ -1,0 +1,329 @@
+* {
+margin:0;
+padding:0;
+}
+
+body{
+font-family: 'Palatino Linotype','Book Antiqua','Palatino',serif;
+background:  url('../jn-files/robots-sketch5.png');
+height: 1000px;
+}
+
+/*  1. NAVIGATION
+*/
+#top {
+	position: fixed;
+	background-color: #666;
+	height: 70px;
+	width: 100%;
+	z-index: 1;
+}
+
+
+#navigation {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0;
+	font-family: 'Cherry Cream Soda', Arial, serif;
+}
+
+#navigation ul {
+	list-style: none;
+	position: relative;
+}
+
+#navigation li {
+	font-size: 25px;
+	float: right;
+	margin: 0;
+	padding: 0;
+	height: 70px;
+}
+
+#navigation > ul > li:hover {
+	background-color: #BFCDEA;
+}
+
+/*
+#navigation li a {
+	display: inline;
+}
+*/
+
+#navigation > ul > li > a {
+	display: block;
+	color:#FFF;
+	text-decoration: none;
+	padding: 19px 10px;
+}
+
+#navigation ul > li.selected {
+	background-color: #6BA34D;
+	box-shadow: 0px 4px 2px #5C5349;
+	-webkit-box-shadow: 0px 4px 2px #5C5349;
+	-moz-box-shadow: 0px 4px 2px #5C5349;
+}
+
+#navigation ul > li.selected > a:hover {
+	cursor: default;
+}
+
+#navigation li > ul {
+	position: absolute;
+	float: right;
+	right: 0;
+	top: 70px;
+	display: none;
+	width: 960px;
+	color: #5C5349;
+	margin: 0 auto;
+}
+
+#navigation li:hover ul{
+	display: block;
+}
+
+#navigation li ul a:hover {
+	color: #5C5349;
+}
+
+#navigation li ul a {
+	border-left: 1px   black;
+	font-size: 20px;
+	padding: 5px 10px;
+	display: inline;
+	color: #FFF;
+	text-decoration: none;
+}
+
+#navigation li li:last-child a  {
+	border-left: none;
+}
+
+/*	2.  CONTENT
+*/
+
+#wrapper {
+	margin: 0 auto;
+	width: 960px;
+	padding-top: 145px;
+}
+
+#content{
+position: relative;
+padding-left: 15px;
+margin-top: 30px;
+height: 300px;
+font-weight: bold;
+font-family: Arial;
+background:#C2DED9;
+border: 3px solid #000;
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+box-shadow: 0 0 3px;
+-moz-box-shadow: 0 0 3px;
+-webkit-box-shadow: 0 0 3px;
+}
+
+#content h1 {
+font-size: 40px;
+color: #5C5349;
+}
+
+#content p {
+font-size: 25px;
+color: #222;
+font-family: 'Palatino Linotype','Book Antiqua','Palatino',serif;
+}
+
+#content p.small {
+font-size: 15px;
+}
+
+#content a {
+font-weight: bold;
+color: #5C5349;
+}
+
+#content a:visited {
+color: #5C5349;
+}
+
+
+#content p a:hover {
+font-weight: bold;
+color: #FFF;
+background-color: #242836;
+text-decoration: none;
+}
+
+#content img {
+}
+
+#about-contact {
+	border: 1px #000 black;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background-color: #FFF; 
+} 
+
+#about th {
+	
+}
+
+#about td{
+
+}
+
+/*	4.  KEYBOARD
+*/
+#keyboard-surround {
+width: 960px;
+height: 375px;
+margin: 0 auto;
+position: relative;
+}
+
+#keyboard {
+}
+
+#box {
+	background-color: #FFF;
+	box-shadow: 5px 5px 5px #333;
+	-webkit-box-shadow: 5px 5px 5px #333;
+	-moz-box-shadow: 5px 5px 5px #333;
+	width: 300px;
+	margin-bottom: 10px;
+}
+
+/* 5.	CONTACT FORM
+*/
+
+#commentForm{
+	position:fixed;
+	width:400px;
+	top:190px;
+	right:-410px;
+	z-index:3;
+	background-color:#000;
+	padding-bottom:16px;
+	padding-left: 10px;
+	box-shadow: 0 0 8px #FFF;
+	-webkit-box-shadow: 0 0 8px #FFF;
+	-moz-box-shadow: 0 0 8px #FFF;
+}
+
+/*
+#commentForm:hover{
+right:0px;
+}
+*/
+
+#commentForm h4{
+	cursor:pointer;
+	background-color:#000;
+	padding:10px;
+	color:#FFF;
+	font-variant:small-caps;
+	text-align:center;
+	position:absolute;
+	left:-30px;
+	width:10px;
+	box-shadow: -2px 2px 5px #FFF;
+	-webkit-box-shadow: -2px 2px 5px #FFF;
+	-moz-box-shadow: -2px 2px 5px #FFF;
+}
+
+#commentForm h4:hover{
+	background-color:#C2DED9;
+	color:#000;
+	box-shadow: -2px 2px 5px #000;
+	-webkit-box-shadow: -2px 2px 5px #000;
+	-moz-box-shadow: -2px 2px 5px #000;	
+}
+
+label {
+	display: block;
+}
+label.valid {
+	width: 24px;
+	background: url(../jn-files/valid.png) center center no-repeat;
+	text-indent: -9999px;
+}
+
+label.error {
+	padding-left: 5px;
+	display: inline-block;
+	color: #F00;
+}
+
+input {
+	display: inline-block;
+	width: 220px;
+}
+
+textarea {
+	width: 350px;
+
+}
+
+form {
+	background-color: #000;
+	color: #FFF;
+}
+
+form div {
+	padding: 5px;
+	float: left;
+	clear: left;
+	width: 100%;
+}
+
+
+.inactive {
+  color: #999;
+}
+
+button {
+  margin-top: 10px;
+}
+
+
+
+/* 6.	CONTENT FRAMES
+*/
+
+#box p {
+font-family: 'Palatino Linotype','Book Antiqua','Palatino',serif;
+font-size: 20px;
+padding: 4px;
+}
+
+#box2 {
+	background-color: #FFF;
+	box-shadow: 5px 5px 5px #333;
+	-webkit-box-shadow: 5px 5px 5px #333;
+	-moz-box-shadow: 5px 5px 5px #333;
+
+	position: relative;
+}
+
+.brown {
+	color: #5C5349;
+}
+
+.soundOff {
+	display: none;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.soundOn {
+	cursor: pointer;
+	cursor: hand;
+}
+
+.right {
+	float: right;
+	padding-right: 10px;
+}

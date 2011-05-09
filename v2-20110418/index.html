@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta name="robots" content="noindex,nofollow" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<title>Website of Joey Nguyen</title>
+<link rel="stylesheet" href="css/stylesheet.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/keyboard.css" type="text/css" media="screen" charset="utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Cherry+Cream+Soda' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+<audio id="keyPressSound" preload="auto" style="display: none;">
+	<source src="keypress.ogg" type="audio/ogg">
+	<source src="keypress.mp3" type="audio/mpeg">
+</audio>
+<div id="top">
+	<div id="navigation">
+		<ul>
+			<li id="resources"><a href="resources.html">
+				<span>r</span><span>e</span><span>s</span><span>o</span><span>u</span><span>r</span><span>c</span><span>e</span><span>s</span>
+			</a>
+				<ul>
+					<li><a href="#">Websites</a></li>
+					<li><a href="#">Mac</a></li>
+					<li><a href="#">Firefox</a></li>
+				</ul>	
+			</li>
+			<li id="play"><a href="play.html">
+				<span>p</span><span>l</span><span>a</span><span>y</span>
+			</a></li>
+			<li id="about"><a href="about.html">
+				<span>a</span><span>b</span><span>o</span><span>u</span><span>t</span>
+			</a></li>
+			<li id="home"><a href="index.html" class="selected">
+				<span>h</span><span>o</span><span>m</span><span>e</span>
+			</a></li>		
+		</ul>
+	</div> <!-- end navigation -->
+</div> <!-- end top -->
+<div id="wrapper">
+	<div id="keyboard-surround" align="center">	
+	<!--
+	<p align="center"><input id="toggleKeyboard" type="button" value="hide keyboard" /></p>
+	-->
+	<div id="keyboard">
+	<table cellspacing=0 id="kbTop">
+		<tr>
+		<td class="borderLeft numKey">`</td>
+		<td class="numKey">1</td>
+		<td class="numKey">2</td>
+		<td class="numKey">3</td>
+		<td class="numKey">4</td>
+		<td class="numKey">5</td>
+		<td class="numKey">6</td>
+		<td class="numKey">7</td>
+		<td class="numKey">8</td>
+		<td class="numKey">9</td>
+		<td class="numKey">0</td>
+		<td class="numKey">-</td>
+		<td class="numKey">=</td>
+		<td class="del borderRight">&#x232B;</td>
+		</tr>
+	</table>
+	<table cellspacing=0 id="kbSecond">
+		<tr>
+		<td class="tab borderLeft">&#x21E5;</td>
+		<td class="key" id="letter-q">q</td>
+		<td class="key" id="letter-w">w</td>
+		<td class="key" id="letter-e">e</td>
+		<td class="key" id="letter-r">r</td>
+		<td class="key" id="letter-t">t</td>
+		<td class="key" id="letter-y">y</td>
+		<td class="key" id="letter-u">u</td>
+		<td class="key" id="letter-i">i</td>
+		<td class="key" id="letter-o">o</td>
+		<td class="key" id="letter-p">p</td>
+		<td class="symKey">[</td>
+		<td class="symKey">]</td>
+		<td class="symKey">\</td>						
+		</tr>
+	</table>
+	<table cellspacing=0>
+		<tr>
+		<td class="caps borderLeft">&#8682;</td>
+		<td class="key" id="letter-a">a</td>
+		<td class="key" id="letter-s">s</td>
+		<td class="key" id="letter-d">d</td>
+		<td class="key" id="letter-f">f</td>
+		<td class="key" id="letter-g">g</td>
+		<td class="key" id="letter-h">h</td>
+		<td class="key" id="letter-j">j</td>
+		<td class="key" id="letter-k">k</td>
+		<td class="key" id="letter-l">l</td>
+		<td class="symKey">;</td>
+		<td class="symKey">'</td>
+		<td class="enter borderRight">&#x23CE;</td>				
+		</tr>
+	</table>
+	<table cellspacing=0>
+		<tr>
+		<td class="shiftL borderLeft">&#x21E7;</td>
+		<td class="key" id="letter-z">z</td>
+		<td class="key" id="letter-x">x</td>
+		<td class="key" id="letter-c">c</td>
+		<td class="key" id="letter-v">v</td>
+		<td class="key" id="letter-b">b</td>
+		<td class="key" id="letter-n">n</td>
+		<td class="key" id="letter-m">m</td>
+		<td class="symKey">,</td>
+		<td class="symKey">.</td>
+		<td class="symKey">/</td>
+		<td class="shiftR borderRight">&#x21E7;</td>
+		</tr>
+	</table>
+	<table cellspacing=0 id="kbBottom">
+		<tr> 
+		<td class="COC-L borderLeft">&#x2303;</td>
+		<td class="COC-L">&#x2325;</td>
+		<td class="COC-L">&#x2318;</td>
+		<td class="spacebar">space</td>
+		<td class="COC-R">&#x2318;</td>
+		<td class="COC-R">&#x2325;</td>
+		<td class="COC-R borderRight">&#x2303;</td>
+		</tr>
+	</table>
+	</div> <!-- end keyboard -->
+	</div> <!-- end keyboard-surround -->  
+	
+	<div id="content">
+	<h1>See that keyboard above? Yes, you do. Don't lie.</h1>
+	<p>Like me, it's not just something pretty to look at. Try using it to type out the word of any of the navigation links <strong>(<span class="brown">home, about, ...</span>)</strong>.  Something awesome might happen. And by "awesome", I mean "really nerdy".</p>
+	<p>&nbsp;</p>
+	<p>Is pressing keys on my keyboard too slow for you? Try typing with your own, Speed Racer.</p>
+	</div> <!-- end content -->
+
+
+
+</div> <!-- end wrapper -->
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+if (typeof jQuery == 'undefined')
+{
+    document.write(unescape("%3Cscript src='jquery-1.5.min.js' type='text/javascript'%3E%3C/script%3E"));
+}
+</script>
+<script type="text/javascript" src="keypress.js"></script>
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
