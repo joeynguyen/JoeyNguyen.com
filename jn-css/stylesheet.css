@@ -16,15 +16,17 @@ background:  url('../jn-files/robots-sketch.png');
 #wrapper {
 	margin: 0 auto;
 	width: 1020px;
-	height: 100%;
 	margin-top:20px;
-	margin-bottom: 20px;
 	background: #BCCCED;
 	border: 1px solid #444;
 	box-shadow: 0 0 10px;
 	-webkit-box-shadow: 0 0 10px;	
 	-moz-box-shadow: 0 0 10px;
+	min-height: 100%; /* make wrapper extend to bottom of browser */
+}
 
+* html div#wrapper { /* for IE6 - make wrapper extend to bottom of browser */
+height: 100%;
 }
 
 /*  1. NAVIGATION
@@ -159,9 +161,6 @@ font-weight: bold;
 text-decoration: none;
 }
 
-#content img {
-}
-
 #about-me {
 	border: 1px #000 black;
 	border-top-left-radius: 5px;
@@ -263,7 +262,7 @@ form {
 
 form div {
 	padding: 5px;
-	width: 100%;
+/*	width: 100%; */
 }
 
 button {
@@ -277,9 +276,13 @@ button {
 #tabs-wrapper {
 	background-color: #777;
 	width: 960px;
-	height: 100%;
-	margin: 0 auto;
+	padding-bottom: 20px;	
+	margin: 20px auto;
 	border: 1px solid #333;
+}
+
+div#tabs-wrapper .height {
+	height:2000px;
 }
 
 #tabs {
@@ -331,7 +334,6 @@ button {
 #single-tab {
 	background: #F4F4F4;
 	border: 1px solid #000;
-	height: 2000px;
 }
 
 #tab-content p {
@@ -354,31 +356,52 @@ color: #375CA6;
 }
 
 dl {
-	border-bottom: 1px solid #999; 
 	width:850px; 
 	margin: 0 auto;
 }
 
 dl dt {
-	clear: left;
-	float: left;
-	width: 175px;
 	margin: 0;
-	padding: 5px;
-	border-top: 1px solid #999;
+	padding: 5px 0 0  5px;
 	font-weight: bold;
+	border-top: 1px solid #999;
 }
 
 dl dd
 {
-	border-top: 1px solid #999;
 	padding: 5px;
-	margin: 10px 0;
 }
 
-dl dd.first { border-top: 1px solid #999; }
+dl dt:first-child {
+	border-top: none;
+}
 
+dd img {
+	margin: 0 0 5px 10px;
+	float: right;
+	box-shadow: 0px 1px 5px;
+}
 
+dd img.hover {
+	box-shadow: none;
+	border: 1px solid #000;
+	background-color: #000;
+	width: auto;
+	height: auto;
+}
+
+.clearfix
+{
+    clear: both;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
 
 /* 7.	CONTENT FRAMES
 */

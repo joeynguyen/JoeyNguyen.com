@@ -16,6 +16,13 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+if (typeof jQuery == 'undefined')
+	{
+    	document.write(unescape("%3Cscript src='jn-scripts/jquery-1.5.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+	}
+</script>
 
 </head>
 <body>
@@ -34,6 +41,7 @@
 				</a>
 					<ul>
 						<li><a href="#">Websites</a></li>
+						<li><a href="#">Bookmarklets</a></li>
 						<li><a href="#">Mac</a></li>
 						<li><a href="#">Firefox</a></li>
 					</ul>	
@@ -63,7 +71,7 @@
 		<p>A list of third-party Mac software you may not know about but should.</p>
 	</div> <!-- end content -->
 
-	<div id="tabs-wrapper">
+	<div id="tabs-wrapper" class="clearfix">
 		<div id="tabs">
 			<ul>
 			<li><a href="mac-ux.html" class="active">User Experience</a></li>
@@ -76,11 +84,13 @@
 			<div id="single-tab">
 				<dl>
 					<dt>TotalFinder</dt>
-						<dd>Do you wish your Mac had Cut & Paste like your old Windows computer did? Wish Finder had tabs like your internet browser does so you don't have 5 open Finder windows cluttering up your screen? Need to see your system files (you know, the ones that start with a . and are usually hidden unless you know how to use the command line or downloaded some software that lets you display them in Finder)? TotalFinder has all of these and many other useful features. Not only that, but TotalFinder stays out of your way by always hiding its window until you decide you want to see it using a simple keyboard shortcut. Definitely one of my favorite third party applications.</dd>
+						<dd><a href="jn-files/totalfinder.png"><img src="jn-files/totalfinder.png" width="250px" height="170px" /></a> Do you wish your Mac had Cut & Paste like your old Windows computer did? Wish Finder had tabs like your internet browser does so you don't have 5 open Finder windows cluttering up your screen? Need to see your system files (you know, the ones that start with a . and are usually hidden unless you know how to use the command line or downloaded some software that lets you display them in Finder)? </dd>
+						<dd>TotalFinder has all of these and many other useful features. Not only that, but TotalFinder stays out of your way by always hiding its window until you decide you want to see it using a simple keyboard shortcut. Definitely one of my favorite third party applications.</dd>
 					<dt>Alfred</dt>
 						<dd>Alfred is like a Swiss-army knife for OS X and a keyboard-shortcut enthusiast's dream application. Its free version is fairly useful, but its paid "Powerpack" version is where it really shines. File System Navigation, built in Clipboard History, and being able to search one of many popular sites like Amazon, eBay, or Facebook with just a keyboard shortcut are some of the many features that make Alfred great.</dd>
 					<dt>KeyRemap4MacBook</dt>
-						<dd>This app allows you to customize your keyboard layout in a staggering amount of ways. If you only use modifier keys (Shift, Ctrl, Option, Command) on one side of the keyboard, you can edit the modifier keys on the other side to do other useful functions. You can also change what the F keys (top row) do if you don't like the default setup. Know Emacs or Vi shortcuts? You can now use them on your desktop! This tool saved me after I bought a Happy Hacking Professional 2 Keyboard. IMO that keyboard's layout is amazing in every way except for one very important aspect - I didn't like using the Function key to enable the arrow key functions because Function key was too far away from the default hand positions; I was afraid I just spent a ridiculous amount of money on a keyboard I don't even like using. Luckily, this tool has features JUST for that keyboard! Instead of holding down the Function key, I can use the Shift key instead which is much closer to default hand positions.</dd>
+						<dd>This app allows you to customize your keyboard layout in a staggering amount of ways. If you only use modifier keys (Shift, Ctrl, Option, Command) on one side of the keyboard, you can edit the modifier keys on the other side to do other useful functions. You can also change what the F keys (top row) do if you don't like the default setup. Know Emacs or Vi shortcuts? You can now use them on your desktop! </dd>
+						<dd>This tool saved me after I bought a Happy Hacking Professional 2 Keyboard. IMO that keyboard's layout is amazing in every way except for one very important aspect - I didn't like using the Function key to enable the arrow key functions because Function key was too far away from the default hand positions; I was afraid I  had just spent a ridiculous amount of money on a keyboard I won't even enjoy using. Luckily, this tool has features JUST for that keyboard! Instead of holding down the Function key, I can use the Shift key instead which is much closer to default hand positions.</dd>
 					<dt>BetterTouchTool</dt>
 						<dd>If you have a unibody Mac laptop with the multitouch trackpad or if you have a Magic Trackpad, this tool adds amazing new multitouch powers to your trackpad. You can assign almost any action you can think of to these gestures, allowing you accomplish tasks in fractions of the time. I won't even try listing some of them. Check it out for yourself on their website.</dd>
 					<dt>SizeUp</dt>
@@ -138,13 +148,7 @@
           </div>
         </form>
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-<script type="text/javascript">
-if (typeof jQuery == 'undefined')
-{
-    document.write(unescape("%3Cscript src='jn-scripts/jquery-1.5.1.min.js' type='text/javascript'%3E%3C/script%3E"));
-}
-</script>
+
 <script type="text/javascript" src="jn-scripts/keypress.js"></script>
 <script type="text/javascript" src="jn-scripts/script.js"></script>
 <script type="text/javascript" src="jn-scripts/jquery.validate.min.js"></script>

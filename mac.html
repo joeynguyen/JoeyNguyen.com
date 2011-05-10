@@ -41,6 +41,7 @@ if (typeof jQuery == 'undefined')
 				</a>
 					<ul>
 						<li><a href="#">Websites</a></li>
+						<li><a href="#">Bookmarklets</a></li>
 						<li><a href="#">Mac</a></li>
 						<li><a href="#">Firefox</a></li>
 					</ul>	
@@ -70,7 +71,9 @@ if (typeof jQuery == 'undefined')
 		var url = $('#tabs a').first().attr('href') + ' #single-tab';
 		$('#tabs a').first().addClass("active");		
 		$('#tab-content').load(url);
+
 	});
+
 </script>
 
 	<div id="content">
@@ -78,7 +81,7 @@ if (typeof jQuery == 'undefined')
 		<p>A list of third-party Mac software you may not know about but should.</p>
 	</div> <!-- end content -->
 
-	<div id="tabs-wrapper">
+	<div id="tabs-wrapper" class="clearfix">
 		<div id="tabs">
 			<ul>
 			<li><a href="mac-ux.html">User Experience</a></li>
@@ -144,7 +147,5 @@ if (typeof jQuery == 'undefined')
 <script type="text/javascript" src="jn-scripts/script.js"></script>
 <script type="text/javascript" src="jn-scripts/jquery.validate.min.js"></script>
 <script type="text/javascript" src="jn-scripts/jquery.easing.1.3.js"></script>
-
-
 </body>
 </html>

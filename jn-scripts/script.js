@@ -62,4 +62,18 @@ $(document).ready(function() {
 	});
 
 
+	/* RESOURCE IMAGES */
+
+	$('dd img').live("hover", function(){
+		$(this).toggleClass("hover");
+	});
+/*
+	$('div#tabs-wrapper').click(function() {
+		$(this).css('height','100%');
+	});
+
+	$('#single-tab').live("ready", function(){
+		$('div#tabs-wrapper').addClass('height');
+	});
+*/
 });

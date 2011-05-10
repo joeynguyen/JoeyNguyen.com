@@ -16,6 +16,14 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+if (typeof jQuery == 'undefined')
+{
+    document.write(unescape("%3Cscript src='jn-scripts/jquery-1.5.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+}
+</script>
+
 
 </head>
 <body>
@@ -34,6 +42,7 @@
 				</a>
 					<ul>
 						<li><a href="#">Websites</a></li>
+						<li><a href="#">Bookmarklets</a></li>
 						<li><a href="#">Mac</a></li>
 						<li><a href="#">Firefox</a></li>
 					</ul>	
@@ -63,7 +72,7 @@
 		<p>A list of third-party Mac software you may not know about but should.</p>
 	</div> <!-- end content -->
 
-	<div id="tabs-wrapper">
+	<div id="tabs-wrapper" class="clearfix">
 		<div id="tabs">
 			<ul>
 			<li><a href="mac-ux.html">User Experience</a></li>
@@ -76,7 +85,8 @@
 			<div id="single-tab">
 				<dl>
 					<dt>SuperDuper</dt>
-						<dd>The hard drive(s) or SSD in your computer will fail on you one day. If the drive just contains media files, it's easy to back it up simply by copying and pasting the files to another drive. However, if you need to be able to immediately start working again, then you need a backup boot drive that has all of your system info and user configurations intact that you can swap with your broken drive. Time Machine can back up your files but you still need to reinstall Mac OS X on a drive before you can restore the files.  SuperDuper can create a backup boot drive that lets you start working again right away. There's also a free alternative to SuperDuper that I've heard good thing about from other users called Carbon Copy Cloner; it is supposed to do the same thing, but I haven't used it and therefore can't comment on its reliability like I can with SuperDuper which has been solid for me.</dd>
+						<dd>The hard drive(s) or SSD in your computer will fail on you one day. If the drive just contains media files, it's easy to back it up simply by copying and pasting the files to another drive. However, if you need to be able to immediately start working again, then you need a backup boot drive that has all of your system info and user configurations intact that you can swap with your broken drive. Time Machine can back up your files, but you still need to reinstall Mac OS X on a drive before you can restore the files.</dd>
+						<dd>SuperDuper can create a backup boot drive that lets you start working again right away. There's also a free alternative to SuperDuper that I've heard good thing about from other users called Carbon Copy Cloner; it is supposed to do the same thing, but I haven't used it and therefore can't comment on its reliability like I can with SuperDuper which has been solid for me.</dd>
 					<dt>OmniDiskSweeper</dt>
 						<dd>Do you often run low on storage space on your hard drive and wonder what's taking up all that space?  OmniDiskSweeper makes figuring that out quick and painless.</dd>
 					<dt>iStat Menus</dt>
@@ -132,13 +142,7 @@
           </div>
         </form>
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-<script type="text/javascript">
-if (typeof jQuery == 'undefined')
-{
-    document.write(unescape("%3Cscript src='jn-scripts/jquery-1.5.1.min.js' type='text/javascript'%3E%3C/script%3E"));
-}
-</script>
+
 <script type="text/javascript" src="jn-scripts/keypress.js"></script>
 <script type="text/javascript" src="jn-scripts/script.js"></script>
 <script type="text/javascript" src="jn-scripts/jquery.validate.min.js"></script>
