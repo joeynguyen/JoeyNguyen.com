@@ -49,6 +49,7 @@ Disallow: /search/
 Disallow: /user/register/
 Disallow: /user/password/
 Disallow: /user/login/
+Disallow: /user/
 # Paths (no clean URLs)
 Disallow: /?q=admin/
 Disallow: /?q=comment/reply/
@@ -63,3 +64,8 @@ Disallow: /jn-css/
 Disallow: /jn-scripts/
 Disallow: /jn-files/
 Disallow: /v2/
+Disallow: /*?*
+Disallow: /*?
+Disallow: /contact.html
+
+SITEMAP: http://joeynguyen.com/sitemap.xml

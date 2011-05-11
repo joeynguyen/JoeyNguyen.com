@@ -62,18 +62,27 @@ $(document).ready(function() {
 	});
 
 
-	/* RESOURCE IMAGES */
+	/* MAC TABS IMAGES */
+		
+	var offsetX = -500;
+	var offsetY = -335;
+	
+	$('img.hover').live({
+		mouseenter:
+		function(e){
+			var imglink = $(this).attr('src');
+			$('<img id="largeImage" src="' + imglink + '" />').css({'top':  e.pageY + offsetY, 'left': e.pageX + offsetX}).appendTo('body');
+		},
+		mouseleave:
+		function() {
+			$('#largeImage').remove();
+		}
+	});
 
-	$('dd img').live("hover", function(){
-		$(this).toggleClass("hover");
-	});
-/*
-	$('div#tabs-wrapper').click(function() {
-		$(this).css('height','100%');
+	$('img.hover').live("mousemove", function(e){
+		$('#largeImage').css({'top':  e.pageY + offsetY, 'left': e.pageX + offsetX});
 	});
 
-	$('#single-tab').live("ready", function(){
-		$('div#tabs-wrapper').addClass('height');
-	});
-*/
+
+
 });
