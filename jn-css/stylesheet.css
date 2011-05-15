@@ -41,7 +41,7 @@ height: 100%;
 
 #navigation {
 	margin: 0 auto;
-	font-family: 'Cherry Cream Soda', Arial, serif;
+	font-family: 'Cherry Cream Soda', 'Verdana', 'Arial', serif;
 }
 
 #navigation li {
@@ -134,7 +134,7 @@ box-shadow: 0 0 3px;
 #content h1 {
 font-size: 35px;
 color: #666;
-font-family: Arial;
+font-family: 'Helvetica Neue', 'Helvetica', Arial;
 }
 
 #content p {
@@ -295,7 +295,6 @@ button {
 	padding: 0;
 	padding-top: 20px;
 	margin: 0 auto;
-	font-family: 'Cherry Cream Soda', Arial, serif;
 	z-index: 1;
 }
 
@@ -304,7 +303,9 @@ button {
 }
 
 #tabs li {
+	font-family: 'Play', 'Helvetica Neue', 'Helvetica', Arial, serif;
 	font-size: 20px;
+	font-weight: bold;
 	float: left;
 	margin-right: 5px;
 	margin-bottom: -1px;
@@ -369,7 +370,7 @@ dl dt {
 	padding: 5px 0 0  5px;
 	font-weight: bold;
 	border-top: 1px solid #999;
-	font-family: Arial;
+	font-family: 'Verdana','Helvetica Neue','Helvetica',Arial;
 	font-size: 20px;
 }
 
@@ -377,6 +378,9 @@ dl dd
 {
 	padding: 5px;
 	font-size: 18px;
+	font-family: 'Quattrocento Sans','Helvetica Neue','Helvetica','Book Antiqua',sans-serif;
+	line-height: 1.5em;
+	
 }
 
 dl dt:first-child {
@@ -387,7 +391,6 @@ dl dt:first-child {
 dl dt:first-letter {
 	font-size: 25px;
 }
-
 
 dl img {
 	width: 250px;
@@ -412,8 +415,8 @@ padding: 10px 201px;
 
 #largeImage {
 	position: absolute;
-	font-size: 14px;
-	font-family: Arial;
+	font-size: 13px;
+	font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', 'Helvetica', Arial;
 	z-index: 100;
 	padding: 5px;
 	background-color: #000;
@@ -424,8 +427,6 @@ padding: 10px 201px;
 
 /* 7.	CONTENT FRAMES
 */
-
-
 
 #box {
 	background-color: #FFF;
