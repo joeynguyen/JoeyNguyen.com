@@ -118,7 +118,7 @@ height: 100%;
 #content{
 position: relative;
 padding-left: 15px;
-margin: 35px 0 20px 85px;
+margin: 0 auto;
 width: 830px;
 height: 250px;
 font-weight: bold;
@@ -300,11 +300,11 @@ button {
 
 #tabs ul {
 	list-style: none;
-		margin-left: 170px;
+	margin-left: 170px;
 }
 
 #tabs li {
-	font-family: 'Play', 'Helvetica Neue', 'Helvetica', Arial, serif;
+	font-family: 'Helvetica Neue', 'Helvetica', Arial, serif;
 	font-size: 20px;
 	font-weight: bold;
 	float: left;
@@ -316,9 +316,8 @@ button {
 	display: block;
 	color: #F4F4F4;
 	text-decoration: none;
-	padding: 10px 10px;
 	border-bottom: none;
-	padding: 10px 20px 5px 20px;
+	padding: 10px 20px 7px 20px;
 }
 
 #tabs li a.active {
@@ -335,7 +334,7 @@ button {
 	padding: 0;
 	margin: 0 auto;
 	margin-left: 30px;
-	float: left;	
+	float: left;
 }
 
 #single-tab {
@@ -343,8 +342,10 @@ button {
 	border: 1px solid #000;
 	border-radius: 4px 4px 4px 4px;
 	-moz-border-radius: 4px 4px 4px 4px;
-	
+	position: relative;
 }
+
+
 
 #tab-content p {
 	padding-left: 10px;
@@ -376,7 +377,7 @@ dl dt {
 	font-weight: bold;
 	border-top: 1px solid #999;
 	font-family: 'Verdana','Helvetica Neue','Helvetica',Arial;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 dl dt:first-child {
@@ -385,15 +386,15 @@ dl dt:first-child {
 }
 
 dl dt:first-letter {
-	font-size: 25px;
+	font-size: 22px;
 }
 
-#tab-content #single-tab dl > dt > a {
+#tab-content #single-tab .terms > dt > a {
 	color: #000;
 	text-decoration: none;
 }
 
-#tab-content #single-tab dl > dt > a:hover {
+#tab-content #single-tab .terms > dt > a:hover {
 	text-decoration: none;
 	color: #FFF;
 	background: #555;
@@ -402,44 +403,59 @@ dl dt:first-letter {
 	-moz-border-radius: 4px 4px 4px 4px;
 }
 
-dl dd
-{
+dd {
 	padding: 5px;
-	font-size: 18px; 
+	font-size: 16px;
 	font-family: 'Quattrocento','Quattrocento','Helvetica Neue','Helvetica','Book Antiqua',sans-serif;
 	line-height: 1.5em;
-	
 }
 
-dl img {
+dd ul {
+	padding-left: 15px;
+}
+
+dl .images img {
+	width: 180px;
+	height: auto;
 	box-shadow: 0px 1px 5px #375CA6;
 	-webkit-box-shadow: 0px 1px 5px #375CA6;
 	-moz-box-shadow: 0px 1px 5px #375CA6;
-
 }
 
-dl a.img1 {
-	margin: 10px;
+dl .images a {
+	margin: 0 0 0 65px;
 }
 
-dl a.img2 {
-	margin: 10px 20px;
+dl .terms {
+	float:left;
+	width: 600px;	
+
+	border-top: 1px solid #999;
 }
 
-dl a.img3 {
-	margin: 10px;
+dl .images {
+	padding: 50px 0 40px 0;
+	float:left;
+	clear:right;
+	width: 250px;
+	border-top: 1px solid #999;
+}
+
+dl .first {
+	border-top: none;
 }
 
 div.center{
 padding: 10px 201px;
 }
 
-#largeImage {
+.terms p#largeImage {
 	position: absolute;
 	font-size: 13px;
 	font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', 'Helvetica', Arial;
 	z-index: 100;
 	padding: 5px;
+	margin-left: -5px;
 	background-color: #000;
 	color: #FFF;
 	border: 2px solid #bfbfbf;

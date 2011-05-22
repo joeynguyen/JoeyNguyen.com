@@ -67,18 +67,18 @@ $(document).ready(function() {
 	var offsetX1 = -50;
 	var offsetX2 = -338;
 	var offsetX3 = -625;
+	var offsetX = -825;	
 		/* Left Image */
-	$('a.img1').live({
+	$('dl a.hover').live({
 		mouseenter:
 		function(e){
 			this.t = this.title;
-			this.title = "";	
+			this.title = "";
 			var c = (this.t != "") ? "<br/>" + this.t : "";
 			var imglink = $(this).attr('href');
+			var imgPos = $(this).closest('.images').prev('.terms').children("dt");
 
-			imageHeight = $(this).children("img").attr("height");
-
-			$('<p id="largeImage"><img src="' + imglink + '" />'+ c +'</p>').css({'top':  e.pageY - (imageHeight*2.6+80), 'left': e.pageX + offsetX1}).appendTo('body');
+			$('<p id="largeImage"><img src="' + imglink + '" />'+ c +'</p>').fadeIn(600).appendTo(imgPos);
 		},
 		mouseleave:
 		function() {
@@ -86,58 +86,7 @@ $(document).ready(function() {
 			$('#largeImage').remove();
 		}
 	});
-
-	$('a.img1').live("mousemove", function(e){
-		$('#largeImage').css({'top':  e.pageY - (imageHeight*2.6+80), 'left': e.pageX + offsetX1});
-	});
-		/* Middle Image */
-	$('a.img2').live({
-		mouseenter:
-		function(e){
-			this.t = this.title;
-			this.title = "";	
-			var c = (this.t != "") ? "<br/>" + this.t : "";
-			var imglink = $(this).attr('href');
-
-			imageHeight = $(this).children("img").attr("height");
-
-			$('<p id="largeImage"><img src="' + imglink + '" />'+ c +'</p>').css({'top':  e.pageY - (imageHeight*2.6+80), 'left': e.pageX + offsetX2}).appendTo('body');
-		},
-		mouseleave:
-		function() {	
-			this.title = this.t;
-			$('#largeImage').remove();
-		}
-	});
-		
-	$('a.img2').live("mousemove", function(e){
-		$('#largeImage').css({'top':  e.pageY - (imageHeight*2.6+80), 'left': e.pageX + offsetX2});
-	});
-		
-		/* Right Image */
-	$('a.img3').live({
-		mouseenter:
-		function(e){
-			this.t = this.title;
-				this.title = "";	
-			var c = (this.t != "") ? "<br/>" + this.t : "";
-			var imglink = $(this).attr('href');
-
-			imageHeight = $(this).children("img").attr("height");
-
-			$('<p id="largeImage"><img src="' + imglink + '" />'+ c +'</p>').css({'top':  e.pageY - (imageHeight*2.6+80), 'left': e.pageX + offsetX3}).appendTo('body');
-		},
-		mouseleave:
-		function() {
-			this.title = this.t;
-			$('#largeImage').remove();
-		}
-	});
-		
-	$('a.img3').live("mousemove", function(e){
-		$('#largeImage').css({'top':  e.pageY - (imageHeight*2.6+80), 'left': e.pageX + offsetX3});
-	});
-
+	
 	$('dl a.hover').live("click", function(e){
 		e.preventDefault();
 	});
