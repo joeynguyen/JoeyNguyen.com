@@ -22,7 +22,7 @@
 <script type="text/javascript">
 if (typeof jQuery == 'undefined')
 {
-    document.write(unescape("%3Cscript src='jn-scripts/jquery-1.5.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+	document.write(unescape("%3Cscript src='jn-scripts/jquery-1.5.1.min.js' type='text/javascript'%3E%3C/script%3E"));
 }
 </script>
 
@@ -44,7 +44,7 @@ if (typeof jQuery == 'undefined')
 					<ul>
 						<li><a href="#">Websites</a></li>
 						<li><a href="#">Bookmarklets</a></li>
-						<li><a href="#">Mac</a></li>
+						<li><a href="mac.html">Mac</a></li>
 						<li><a href="#">Firefox</a></li>
 					</ul>	
 				</li>
@@ -70,7 +70,7 @@ if (typeof jQuery == 'undefined')
 <!-- ************		START CONTENT HERE!!!!!!!!!!		************ --> 
 	<div id="content">
 		<h1>Mac Security Apps</h1>
-		<p>A list of third-party Mac software you may not know about but should.</p>
+		<p></p>
 	</div> <!-- end content -->
 
 	<div id="tabs-wrapper" class="clearfix">
@@ -85,11 +85,20 @@ if (typeof jQuery == 'undefined')
 		<div id="tab-content">
 			<div id="single-tab">
 				<dl>
+					<div class="terms first">
 					<dt><a href="http://agilebits.com/onepassword" target="_blank">1Password</a></dt>
 					<dd>Secure - Do you use the same 3-5 passwords for everything? Did you realize that doing so makes you an <a href="http://lifehacker.com/#!5505400/how-id-hack-your-weak-passwords" target="_blank">easy target</a> to any hacker wanting to get into your online accounts? 1Password makes it SUPER EASY to keep your accounts secure. It can create strong passwords for each website you have an account at and stores your usernames and passwords in an encrypted database on your computer accessible only by using your Master Password. That means you only need to remember one password for EVERYTHING (you should make it <a href="http://lifehacker.com/#!184773/geek-to-live--choose-and-remember-great-passwords" target="_blank">hard to guess</a>).</dd>
 					<dd>Easy to use - A tool that can help you secure your web activity is good and all but only if you actually use it. What makes <a href="http://agilebits.com/onepassword" target="_blank">1Password</a> GREAT is its integration with your web browser. Its web browser integration allows you to fill in your username and password for each site by clicking the 1Password button in your browser or performing a keyboard shortcut. In addition to your logins, 1Password can store all of your credit card and bank info in one safe place, and it also can autofill your contact info into web forms which makes signing up for web services or shopping online quick and less annoying.</dd>
 					<dd>Portable - If you have more than one computer, you can run 1Password on all your computers and share your 1Password data between them using Dropbox. Have an Android phone or iPhone? Download their app and have access to your logins anytime when you're away from your computer. There's also the <a href="http://www.youtube.com/watch?v=Ne7cQQ7Moow" target="_blank">1Password Anywhere</a> feature, which is awesome as well.</dd>
-						<div class="center"><iframe width="448" height="279" src="http://www.youtube.com/embed/oaCHlMF5Vwc" frameborder="0" allowfullscreen></iframe></div>
+					</div>
+
+					<div class="images first">
+						<a class='yt' href="http://www.youtube.com/embed/oaCHlMF5Vwc?rel=0"><img src="jn-files/1Pass.jpg" alt="1Password Video" /></a>
+						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+					</div>
+
+					<p class="clear">.</p>
+				
 				</dl>
 			</div> <!-- end single-tab -->
 		</div> <!-- end tab-content -->
@@ -146,5 +155,8 @@ if (typeof jQuery == 'undefined')
 <script type="text/javascript" src="jn-scripts/script.js"></script>
 <script type="text/javascript" src="jn-scripts/jquery.validate.min.js"></script>
 <script type="text/javascript" src="jn-scripts/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="jn-scripts/jquery.colorbox-min.js"></script>
+<link rel="stylesheet" href="jn-css/colorbox.css" type="text/css" media="screen" charset="utf-8" />
+
 </body>
 </html>

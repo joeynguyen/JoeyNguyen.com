@@ -180,8 +180,8 @@ text-decoration: none;
 */
 #keyboard-surround {
 width: 960px;
-margin: 0 auto;
-position: relative;
+margin: 0 auto 40px auto;
+
 }
 
 /* 5.	CONTACT FORM
@@ -288,6 +288,7 @@ button {
     clear: both;
     visibility: hidden;
 }
+
 
 #tabs {
 	position: relative;
@@ -426,17 +427,16 @@ dl .images a {
 	margin: 0 0 0 65px;
 }
 
+
 dl .terms {
 	float:left;
-	width: 600px;	
-
+	width: 600px;
 	border-top: 1px solid #999;
 }
 
 dl .images {
 	padding: 50px 0 40px 0;
 	float:left;
-	clear:right;
 	width: 250px;
 	border-top: 1px solid #999;
 }
@@ -445,9 +445,10 @@ dl .first {
 	border-top: none;
 }
 
-div.center{
-padding: 10px 201px;
+dl p.clear { /* add a <p class="clear">.</p> before the </dl> to fix formatting issue */
+	visibility: hidden;
 }
+
 
 .terms p#largeImage {
 	position: absolute;
@@ -462,31 +463,6 @@ padding: 10px 201px;
 	text-align: center;
 }
 
-/* 7.	CONTENT FRAMES
-*/
-
-#box {
-	background-color: #FFF;
-	box-shadow: 5px 5px 5px #333;
-	-webkit-box-shadow: 5px 5px 5px #333;
-	-moz-box-shadow: 5px 5px 5px #333;
-	width: 300px;
-	margin-bottom: 10px;
-}
-
-#box p {
-font-family: 'Palatino Linotype','Book Antiqua','Palatino',serif;
-font-size: 20px;
-padding: 4px;
-}
-
-#box2 {
-	background-color: #FFF;
-	box-shadow: 5px 5px 5px #333;
-	-webkit-box-shadow: 5px 5px 5px #333;
-	-moz-box-shadow: 5px 5px 5px #333;
-	position: relative;
-}
 
 .brown {
 	color: #5C5349;

@@ -6,12 +6,7 @@ $(document).ready(function() {
 		$(soundButton).insertBefore('#keyboard');
 		$(soundButton).insertBefore('#commentForm label:first').addClass('right');
 	}
-/*			
-	$('#toggleKeyboard').click(function() {
-		$('#keyboard').hide();
-		$(this).show();
-	});
-*/
+
 	$('.soundOn').click(function(){
 		$('.soundOn').hide();
 		$('.soundOff').show();
@@ -53,6 +48,8 @@ $(document).ready(function() {
 		$('.soundOn').show();		
 	});
 
+	/* AJAX TAB LOADING */
+
 	$('#tabs ul a').click(function(e) {
 		var url = $(this).attr('href') + ' #single-tab';
 		$('#tab-content').load(url);
@@ -63,12 +60,7 @@ $(document).ready(function() {
 
 
 	/* MAC TABS IMAGES HOVER */
-		
-	var offsetX1 = -50;
-	var offsetX2 = -338;
-	var offsetX3 = -625;
-	var offsetX = -825;	
-		/* Left Image */
+
 	$('dl a.hover').live({
 		mouseenter:
 		function(e){
@@ -91,5 +83,12 @@ $(document).ready(function() {
 		e.preventDefault();
 	});
 
+	/* LIGHTBOX - YOUTUBE VIDEOS */
+
+	$(".yt").live('click', function() {
+		url = this.href;
+		$.fn.colorbox({href: url, iframe:true, innerWidth:595, innerHeight:371});
+		return false;
+	});
 
 });

@@ -18,7 +18,7 @@ $(document).ready(function() {
 		yy == cc ? bb.addClass(p) : aa.removeClass(p);
 		if ($(dd).hasClass("pressed")) {
 			setTimeout(function() {
-				$(location).attr('href','index.html'); /* loads new page once all letters in the word have been highlighted */
+				$(location).attr('href','/'); /* loads new page once all letters in the word have been highlighted */
 			}, 200); /* adds slight pause so the last letter can play the keyboard click sound before loading next page */
 		}
 
@@ -79,7 +79,7 @@ $(document).ready(function() {
 		e.which == c ? b.addClass(p) : a.removeClass(p);
 		if ($(d).hasClass("pressed")) {
 			setTimeout(function() {
-				$(location).attr('href','index.html');
+				$(location).attr('href','/');
 			}, 200);
 		}
 

@@ -56,7 +56,7 @@ echo "blarg!";
 				</a>
 					<ul>
 						<li><a href="#">Websites</a></li>
-						<li><a href="#">Mac</a></li>
+						<li><a href="mac.html">Mac</a></li>
 						<li><a href="#">Firefox</a></li>
 					</ul>	
 				</li>
@@ -102,12 +102,15 @@ echo "blarg!";
 <script type="text/javascript">
 if (typeof jQuery == 'undefined')
 {
-    document.write(unescape("%3Cscript src='jn-scripts/jquery-1.5.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+	document.write(unescape("%3Cscript src='jn-scripts/jquery-1.5.1.min.js' type='text/javascript'%3E%3C/script%3E"));
 }
 </script>
 <script type="text/javascript" src="jn-scripts/keypress.js"></script>
 <script type="text/javascript" src="jn-scripts/script.js"></script>
 <script type="text/javascript" src="jn-scripts/jquery.validate.min.js"></script>
 <script type="text/javascript" src="jn-scripts/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="jn-scripts/jquery.colorbox-min.js"></script>
+<link rel="stylesheet" href="jn-css/colorbox.css" type="text/css" media="screen" charset="utf-8" />
+
 </body>
 </html>

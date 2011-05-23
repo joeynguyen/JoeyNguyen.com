@@ -44,7 +44,7 @@ echo "blarg!";
 			</a>
 				<ul>
 					<li><a href="#">Websites</a></li>
-					<li><a href="#">Mac</a></li>
+					<li><a href="mac.html">Mac</a></li>
 					<li><a href="#">Firefox</a></li>
 				</ul>	
 			</li>
