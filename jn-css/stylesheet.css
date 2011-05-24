@@ -12,7 +12,6 @@ font-family: 'Palatino Linotype','Book Antiqua','Palatino',serif;
 background:  url('../jn-files/robots-sketch.png');
 }
 
-
 #wrapper {
 	margin: 0 auto;
 	width: 1020px;
@@ -140,6 +139,7 @@ font-family: 'Helvetica Neue', 'Helvetica', Arial;
 #content p {
 font-size: 22px;
 color: #222940;
+padding: 10px;
 }
 
 #content p.small {
@@ -159,21 +159,6 @@ color: #375CA6;
 #content p a:hover {
 font-weight: bold;
 text-decoration: none;
-}
-
-#about-me {
-	border: 1px #000 black;
-	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px;
-	background-color: #FFF; 
-} 
-
-#about-me th {
-	
-}
-
-#about-me td{
-
 }
 
 /*	4.  KEYBOARD
@@ -262,7 +247,6 @@ form {
 
 form div {
 	padding: 5px;
-/*	width: 100%; */
 }
 
 button {
@@ -336,9 +320,6 @@ button {
 	margin: 0 auto;
 	margin-left: 30px;
 	float: left;
-}
-
-#single-tab {
 	background: #F4F4F4;
 	border: 1px solid #000;
 	border-radius: 4px 4px 4px 4px;
@@ -346,7 +327,8 @@ button {
 	position: relative;
 }
 
-
+#single-tab {
+}
 
 #tab-content p {
 	padding-left: 10px;
@@ -379,23 +361,23 @@ dl dt {
 	border-top: 1px solid #999;
 	font-family: 'Verdana','Helvetica Neue','Helvetica',Arial;
 	font-size: 18px;
+	padding-top: 15px;
 }
 
 dl dt:first-child {
 	border-top: none;
-	padding-top: 15px;
 }
 
 dl dt:first-letter {
 	font-size: 22px;
 }
 
-#tab-content #single-tab .terms > dt > a {
+#tab-content .terms > dt > a {
 	color: #000;
 	text-decoration: none;
 }
 
-#tab-content #single-tab .terms > dt > a:hover {
+#tab-content .terms > dt > a:hover {
 	text-decoration: none;
 	color: #FFF;
 	background: #555;
@@ -427,11 +409,11 @@ dl .images a {
 	margin: 0 0 0 65px;
 }
 
-
 dl .terms {
 	float:left;
 	width: 600px;
 	border-top: 1px solid #999;
+	padding-bottom: 15px;
 }
 
 dl .images {
@@ -445,12 +427,11 @@ dl .first {
 	border-top: none;
 }
 
-dl p.clear { /* add a <p class="clear">.</p> before the </dl> to fix formatting issue */
-	visibility: hidden;
+dl div.clear {
+	clear: both;
 }
 
-
-.terms p#largeImage {
+#largeImage {
 	position: absolute;
 	font-size: 13px;
 	font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', 'Helvetica', Arial;
@@ -462,7 +443,6 @@ dl p.clear { /* add a <p class="clear">.</p> before the </dl> to fix formatting 
 	border: 2px solid #bfbfbf;
 	text-align: center;
 }
-
 
 .brown {
 	color: #5C5349;
