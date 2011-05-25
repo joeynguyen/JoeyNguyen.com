@@ -3,9 +3,9 @@
 <head>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 <title>Website of Joey Nguyen</title>
-<link rel="stylesheet" href="jn-css/stylesheet.css" type="text/css" media="screen" charset="utf-8" />
-<link rel="stylesheet" href="jn-css/keyboard.css" type="text/css" media="screen" charset="utf-8" />
-<link rel="stylesheet" href="jn-css/colorbox.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="jn-css/stylesheet.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="jn-css/keyboard.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="jn-css/colorbox.css" type="text/css" media="screen" />
 <link href='http://fonts.googleapis.com/css?family=Cherry+Cream+Soda' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Quattrocento' rel='stylesheet' type='text/css'>
 
@@ -42,7 +42,7 @@ if (typeof jQuery == 'undefined')
 
 	<div id="top">
 		<div id="navigation">
-<!--			<p>joeynguyen.com</p> -->
+<!--			<p>Joey Nguyen</p> -->
 			<ul>
 				<li id="resources"><a href="resources.html">
 					<span>r</span><span>e</span><span>s</span><span>o</span><span>u</span><span>r</span><span>c</span><span>e</span><span>s</span>
@@ -57,12 +57,7 @@ if (typeof jQuery == 'undefined')
 				<li id="play"><a href="play.html">
 					<span>p</span><span>l</span><span>a</span><span>y</span>
 				</a></li>
-	<!--
-				<li id="about"><a href="about.html">
-					<span>a</span><span>b</span><span>o</span><span>u</span><span>t</span>
-				</a></li>
-	-->
-				<li id="home" class="selected"><a href="index.html">
+				<li id="home" class="selected"><a href="/">
 					<span>h</span><span>o</span><span>m</span><span>e</span>
 				</a></li>		
 			</ul>
@@ -164,7 +159,6 @@ if (typeof jQuery == 'undefined')
 	<div id="content">
 		<h1>See that keyboard above? Yes, you do. Don't lie.</h1>
 		<p>Like me, it's not just something pretty to look at. Try using it to type out the word of any of the navigation links <strong>(<span class="indigo">home, play, resources</span>)</strong>.  Something awesome might happen. And by "awesome", I mean "really nerdy".</p>
-		<p>&nbsp;</p>
 		<p>Is pressing the keys on my keyboard too slow for you? Try typing with your own, Speed Racer.</p>
 	
 <!--
@@ -189,9 +183,9 @@ if (typeof jQuery == 'undefined')
 
 </div> <!-- end wrapper -->
 
-<form id="commentForm" method="POST" action="mailer.php">
+<form id="commentForm" class="slideOut" method="post" action="mailer.php">
 
-    <h4>C<br />
+    <a>C<br />
       o<br />
       n<br />
       t<br />
@@ -200,7 +194,7 @@ if (typeof jQuery == 'undefined')
       t<br />
        <br />
       M<br />
-      e</h4>
+      e</a>
       
 
 		  <div>
@@ -217,7 +211,7 @@ if (typeof jQuery == 'undefined')
           </div>      
           <div>
             <label for="message">Comment:</label>
-			<textarea  name="message" class="required" cols="30" rows="9" minlength="10"></textarea>
+			<textarea  name="message" id="message" class="required" cols="30" rows="9" minlength="10"></textarea>
           </div>   
      
           <div>

@@ -25,9 +25,9 @@ echo "blarg!";
 <meta name="robots" content="noindex,nofollow" />
 <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 <title>Website of Joey Nguyen</title>
-<link rel="stylesheet" href="jn-css/stylesheet.css" type="text/css" media="screen" charset="utf-8" />
-<link rel="stylesheet" href="jn-css/keyboard.css" type="text/css" media="screen" charset="utf-8" />
-<link rel="stylesheet" href="jn-css/colorbox.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="jn-css/stylesheet.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="jn-css/keyboard.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="jn-css/colorbox.css" type="text/css" media="screen" />
 <link href='http://fonts.googleapis.com/css?family=Cherry+Cream+Soda' rel='stylesheet' type='text/css'>
 <script type="text/javascript">
 
@@ -76,11 +76,6 @@ if (typeof jQuery == 'undefined')
 				<li id="play"><a href="play.html">
 					<span>p</span><span>l</span><span>a</span><span>y</span>
 				</a></li>
-	<!--
-				<li id="about"><a href="about.html">
-					<span>a</span><span>b</span><span>o</span><span>u</span><span>t</span>
-				</a></li>
-	-->
 				<li id="home"><a href="/">
 					<span>h</span><span>o</span><span>m</span><span>e</span>
 				</a></li>		

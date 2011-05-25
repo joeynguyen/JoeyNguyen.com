@@ -22,19 +22,6 @@ $(document).ready(function() {
 			}, 200); /* adds slight pause so the last letter can play the keyboard click sound before loading next page */
 		}
 
-		/* ABOUT link */
-		var	gg = $('#about > a > span'),
-			hh = gg.not('.' + p).first(),
-			ii = hh.text(),
-			jj = gg.last();
-
-		yy == ii ? hh.addClass(p) : gg.removeClass(p);
-		if ($(jj).hasClass("pressed")) {
-			setTimeout(function() {
-				$(location).attr('href','about.html');
-			}, 200);
-		}
-
 		/* PLAY link */
 		var	mm = $('#play > a > span'),
 			nn = mm.not('.' + p).first(),
@@ -80,19 +67,6 @@ $(document).ready(function() {
 		if ($(d).hasClass("pressed")) {
 			setTimeout(function() {
 				$(location).attr('href','/');
-			}, 200);
-		}
-
-		/* ABOUT link */
-		var g = $('#about > a > span'),
-			h = g.not('.' + p).first(),
-			i = h.text().charCodeAt(0),
-			j = g.last();
-
-		e.which == i ? h.addClass(p) : g.removeClass(p);
-		if ($(j).hasClass("pressed")) {
-			setTimeout(function() {
-				$(location).attr('href','about.html');
 			}, 200);
 		}
 

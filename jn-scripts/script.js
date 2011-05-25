@@ -38,8 +38,8 @@ $(document).ready(function() {
 
 	/* FORM EASING */
 	
-	$('#commentForm h4').toggle(function() {
-		$('#commentForm').animate({'right':'+=410px'}, 2000, 'easeOutElastic');
+	$('#commentForm a').toggle(function() {
+		$('#commentForm').animate({'right':'0'}, 2000, 'easeOutElastic');
 		$('.soundOn').hide();
 		$('.soundOff').show();		
 	}, function() {
@@ -47,6 +47,8 @@ $(document).ready(function() {
 		$('.soundOff').hide();
 		$('.soundOn').show();		
 	});
+
+	$('#commentForm').removeClass('slideOut');
 
 	/* AJAX TAB LOADING */
 
@@ -61,14 +63,14 @@ $(document).ready(function() {
 
 	/* MAC TABS IMAGES HOVER */
 
-	$('dl a.hover').live({
+	$('a.hover').live({
 		mouseenter:
 		function(e){
 			this.t = this.title;
 			this.title = "";
 			var c = (this.t != "") ? "<br/>" + this.t : "";
 			var imglink = $(this).attr('href');
-			var imgPos = $(this).closest('.images').prev('.terms').children("dt");
+			var imgPos = $(this).closest('.images').prev('.terms').children("dl").children("dt");
 
 			$('<p id="largeImage"><img src="' + imglink + '" />'+ c +'</p>').fadeIn(600).appendTo(imgPos);
 		},
@@ -79,7 +81,7 @@ $(document).ready(function() {
 		}
 	});
 	
-	$('dl a.hover').live("click", function(e){
+	$('a.hover').live("click", function(e){
 		e.preventDefault();
 	});
 
