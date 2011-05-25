@@ -26,8 +26,6 @@ echo "blarg!";
 <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 <title>Website of Joey Nguyen</title>
 <link rel="stylesheet" href="jn-css/stylesheet.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="jn-css/keyboard.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="jn-css/colorbox.css" type="text/css" media="screen" />
 <link href='http://fonts.googleapis.com/css?family=Cherry+Cream+Soda' rel='stylesheet' type='text/css'>
 <script type="text/javascript">
 
@@ -106,10 +104,8 @@ if (typeof jQuery == 'undefined')
 
 </div> <!-- end wrapper -->
 
-<script type="text/javascript" src="jn-scripts/keypress.js"></script>
 <script type="text/javascript" src="jn-scripts/script.js"></script>
 <script type="text/javascript" src="jn-scripts/jquery.validate.min.js"></script>
-<script type="text/javascript" src="jn-scripts/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="jn-scripts/jquery.colorbox-min.js"></script>
 
 </body>
