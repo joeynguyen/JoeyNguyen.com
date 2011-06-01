@@ -64,11 +64,11 @@ $(document).ready(function() {
 			$('#largeImage').remove();
 		}
 	});
-	
+/*
 	$('a.hover').live("click", function(e){
 		e.preventDefault();
 	});
-
+*/
 /* LIGHTBOX - YOUTUBE VIDEOS */
 
 	$(".yt").live('click', function() {

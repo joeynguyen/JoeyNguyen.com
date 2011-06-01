@@ -156,13 +156,19 @@ if (typeof jQuery == 'undefined')
 	
 	<div id="content">
 		<h1>See that keyboard above? Yes, you do. Don't lie.</h1>
-		<p>Like me, it's not just something pretty to look at. Try using it to type out the word of any of the navigation links <strong>(<span class="indigo">home, play, resources</span>)</strong>.  Something awesome might happen. And by "awesome", I mean "really nerdy".</p>
-		<p>Is pressing the keys on my keyboard too slow for you? Try typing with your own, Speed Racer.</p>
-	
+		<div id="js-yes">
+
+		</div>
+		<div id="js-no">
+		<p>If you had Javascript enabled in your Internet browser, you would be able to actually type with it. Right now, it's just pretty decoration. If you want to see it in action, please enable Javascript.
+		</div>
 <!--
 	<p class="small">By the way, there's an easter egg on this site. Can you figure out what it is?</p>
 -->
-
+		<script type="text/javascript">
+			$('<p>Like me, it\'s not just something pretty to look at. Try using it to type out the word of any of the navigation links <strong>(<span class="indigo">home, play, resources<\/span>)<\/strong>.  Something awesome might happen. And by "awesome", I mean "really nerdy".<\/p><p>Is pressing the keys on my keyboard too slow for you? Try typing with your own, Speed Racer.<\/p>').appendTo('#js-yes');
+			$('#js-no').remove();
+		</script>
 	</div> <!-- end content -->
 
 <!--
