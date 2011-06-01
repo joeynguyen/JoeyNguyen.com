@@ -172,7 +172,7 @@ $(document).ready(function() {
 			n = m.not('.' + p).first(),
 			o = n.text().charCodeAt(0),
 			q = m.last(),
-			v = m.first();
+			v = m.first();	
 
 		e.which == o ? n.addClass(p) : m.removeClass(p);
 		if ($(q).hasClass("pressed")) {
@@ -195,16 +195,13 @@ $(document).ready(function() {
 			}, 200);
 		}
 
-		/* prevent first letters in other links from highlighting */
-		if ($(v).hasClass("pressed")) {
-			$(g).removeClass("pressed");
-		}
 	});
 
 	/* Animates pressed key's block */
 	function animateLetter(letter){
 		if($('.soundOn').is(":visible")){
-		z.play();}
+		z.play();
+		}
 		$("#letter-" + letter).addClass('blue');
 		setTimeout(function() {
 			$("#letter-" + letter).removeClass('blue');
