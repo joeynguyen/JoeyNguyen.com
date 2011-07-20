@@ -1,11 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 <title>Website of Joey Nguyen</title>
 <link rel="stylesheet" href="jn-css/stylesheet.css" type="text/css" media="screen" />
-<link href='http://fonts.googleapis.com/css?family=Cherry+Cream+Soda' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Quattrocento' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Cherry+Cream+Soda' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Quattrocento' rel='stylesheet' type='text/css' />
 
 <script type="text/javascript">
 
@@ -32,7 +32,7 @@ if (typeof jQuery == 'undefined')
 </head>
 <body>
 
-<audio id="keyPressSound" preload="auto" style="display: none;">
+<audio id="keyPressSound" preload="auto">
 	<source src="jn-files/keypress.ogg" type="audio/ogg" />
 	<source src="jn-files/keypress.mp3" type="audio/mpeg" />
 </audio>
@@ -68,10 +68,10 @@ if (typeof jQuery == 'undefined')
 
 <!-- ************		START CONTENT HERE!!!!!!!!!!		************ --> 
 	
-	<div id="keyboard-surround" align="center">	
+	<div id="keyboard-surround">
 
 	<div id="keyboard">
-	<table cellspacing=0 id="kbTop">
+	<table id="kbTop">
 		<tr>
 		<td class="borderLeft numKey">`</td>
 		<td class="numKey">1</td>
@@ -89,7 +89,7 @@ if (typeof jQuery == 'undefined')
 		<td class="del borderRight">&#x232B;</td>
 		</tr>
 	</table>
-	<table cellspacing=0 id="kbSecond">
+	<table id="kbSecond">
 		<tr>
 		<td class="tab borderLeft">&#x21E5;</td>
 		<td class="key" id="letter-q">q</td>
@@ -107,7 +107,7 @@ if (typeof jQuery == 'undefined')
 		<td class="symKey">\</td>						
 		</tr>
 	</table>
-	<table cellspacing=0>
+	<table>
 		<tr>
 		<td class="caps borderLeft">&#8682;</td>
 		<td class="key" id="letter-a">a</td>
@@ -124,7 +124,7 @@ if (typeof jQuery == 'undefined')
 		<td class="enter borderRight">&#x23CE;</td>				
 		</tr>
 	</table>
-	<table cellspacing=0>
+	<table>
 		<tr>
 		<td class="shiftL borderLeft">&#x21E7;</td>
 		<td class="key" id="letter-z">z</td>
@@ -140,7 +140,7 @@ if (typeof jQuery == 'undefined')
 		<td class="shiftR borderRight">&#x21E7;</td>
 		</tr>
 	</table>
-	<table cellspacing=0 id="kbBottom">
+	<table id="kbBottom">
 		<tr> 
 		<td class="COC-L borderLeft">&#x2303;</td>
 		<td class="COC-L">&#x2325;</td>
@@ -156,28 +156,17 @@ if (typeof jQuery == 'undefined')
 	
 	<div id="content">
 		<h1>See that keyboard above? Yes, you do. Don't lie.</h1>
-		<div id="js-yes">
-
+		<div id="js-yes" class="hide">
+			<p>Like me, it's not just something pretty to look at. Try using it to type out the word of any of the navigation links <strong>(<span class="indigo">home, play, resources</span>)</strong>.  Something awesome might happen. And by "awesome", I mean "really nerdy".</p>
+			<p>Is pressing the keys on my keyboard too slow for you? Try typing with your own, Speed Racer.</p>
 		</div>
 		<div id="js-no">
-		<p>If you had Javascript enabled in your Internet browser, you would be able to actually type with it. Right now, it's just pretty decoration. If you want to see it in action, please enable Javascript.
+		<p>If you had Javascript enabled in your Internet browser, you would be able to actually type with it. Right now, it's just pretty decoration. If you want to see it in action, please enable Javascript.</p>
 		</div>
 <!--
 	<p class="small">By the way, there's an easter egg on this site. Can you figure out what it is?</p>
 -->
-		<script type="text/javascript">
-			$('<p>Like me, it\'s not just something pretty to look at. Try using it to type out the word of any of the navigation links <strong>(<span class="indigo">home, play, resources<\/span>)<\/strong>.  Something awesome might happen. And by "awesome", I mean "really nerdy".<\/p><p>Is pressing the keys on my keyboard too slow for you? Try typing with your own, Speed Racer.<\/p>').appendTo('#js-yes');
-			$('#js-no').remove();
-		</script>
 	</div> <!-- end content -->
-
-<!--
-	<div id="about-me">
-	<p>test</p>
-	</div> 
--->	
-	<!-- end about-me -->
-
 
 <!-- ************		END CONTENT HERE!!!!!!!!!!		************ --> 
 
@@ -188,7 +177,7 @@ if (typeof jQuery == 'undefined')
 </div> <!-- end wrapper -->
 
 <form id="commentForm" class="slideOut" method="post" action="mailer.php">
-    <a>C<br />
+    <p><a>C<br />
 	o<br />
 	n<br />
 	t<br />
@@ -197,11 +186,11 @@ if (typeof jQuery == 'undefined')
 	t<br />
 	 <br />
 	M<br />
-	e</a>
+	e</a></p>
 
 	<div>
 		<label for="name">Name:</label>
-		<input name="name" id="name" type="text" minlength="2" />
+		<input name="name" id="name" type="text" />
 	</div>
 	<div>
 		<label for="email">Email:</label>
@@ -213,7 +202,7 @@ if (typeof jQuery == 'undefined')
 	</div>      
 	<div>
 		<label for="message">Comment:</label>
-		<textarea  name="message" id="message" class="required" cols="30" rows="9" minlength="10"></textarea>
+		<textarea  name="message" id="message" class="required" cols="30" rows="9"></textarea>
 	</div>   
 	<div>
 		<input name="submit" type="submit" value="Submit" />

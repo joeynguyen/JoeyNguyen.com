@@ -18,9 +18,9 @@ background:  url('../jn-files/robots-sketch.png');
 	margin-top:20px;
 	background: #BCCCED;
 	border: 1px solid #444;
-	box-shadow: 0 0 10px #333;
-	-webkit-box-shadow: 0 0 10px #333;
-	-moz-box-shadow: 0 0 10px #333;
+	box-shadow: 0px 0px 10px #333;
+	-webkit-box-shadow: 0px 0px 10px #333;
+	-moz-box-shadow: 0px 0px 10px #333;
 	min-height: 100%; /* make #wrapper extend to bottom of browser */
 }
 
@@ -110,9 +110,9 @@ background:#F4F4F4;
 border: 2px solid #222;
 border-radius: 10px 10px 10px 10px;
 -moz-border-radius: 10px 10px 10px 10px;
-box-shadow: 0 0 3px #333;
--moz-box-shadow: 0 0 3px #333;
--webkit-box-shadow: 0 0 3px #333;
+box-shadow: 0px 0px 3px #333;
+-moz-box-shadow: 0px 0px 3px #333;
+-webkit-box-shadow: 0px 0px 3px #333;
 }
 
 #content h1 {
@@ -146,6 +146,11 @@ font-weight: bold;
 text-decoration: none;
 }
 
+.hide {
+display: none;
+}
+
+
 /* 3.	CONTACT FORM
 */
 
@@ -158,9 +163,9 @@ text-decoration: none;
 	background-color:#000;
 	padding-bottom:16px;
 	padding-left:10px;
-	box-shadow:0 0 8px #FFF;
-	-webkit-box-shadow:0 0 8px #FFF;
-	-moz-box-shadow:0 0 8px #FFF;
+	box-shadow:0px 0px 8px #FFF;
+	-webkit-box-shadow:0px 0px 8px #FFF;
+	-moz-box-shadow:0px 0px 8px #FFF;
 }
 
 
@@ -407,15 +412,35 @@ width: 960px;
 margin: 0 auto 40px auto;
 }
 
+#vis {
+width:960px;
+}
+
+.soundOff {
+	display: none;
+	cursor: pointer;
+	margin-left: 463px;
+}
+
+.soundOn {
+	cursor: pointer;
+	margin-left: 463px;
+}
+
+#keyPressSound {
+display: none;
+}
+
 table {
 	font-size: 20px;
 	font-family: monospace;
+	border-spacing: 0;
 }
 
 table td {
-	-moz-box-shadow: 0 0 4px #666;
-	-webkit-box-shadow: 0 0 4px #666;
-	box-shadow: 0 0 4px #666;
+	box-shadow: 0px 0px 4px #666;
+	-moz-box-shadow: 0px 0px 4px #666;
+	-webkit-box-shadow: 0px 0px 4px #666;
 	background: #888;
 }
 
@@ -438,7 +463,6 @@ td.key {
 td.key:hover {
 	background-color: #6BA34D;
 	cursor: pointer;
-	cursor: hand;
 }
 
 td.key:active {
@@ -551,19 +575,12 @@ background-color: #15ADD1}
 /* 6.	MISC
 */
 
+.indigo {
+color: #375CA6;
+}
+
 .darkred {
 	background-color: #A23052;
-}
-
-.soundOff {
-	display: none;
-	cursor: pointer;
-	cursor: hand;
-}
-
-.soundOn {
-	cursor: pointer;
-	cursor: hand;
 }
 
 .right { /*used for sound icon in Contact Form */
@@ -632,27 +649,3 @@ background-color: #15ADD1}
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
 }
 
-/*
-  The following provides PNG transparency support for IE6
-*/
-/*
-.cboxIE6 #cboxTopLeft{background:url(../jn-files/images/ie6/borderTopLeft.png);}
-.cboxIE6 #cboxTopCenter{background:url(../jn-files/images/ie6/borderTopCenter.png);}
-.cboxIE6 #cboxTopRight{background:url(../jn-files/images/ie6/borderTopRight.png);}
-.cboxIE6 #cboxBottomLeft{background:url(../jn-files/images/ie6/borderBottomLeft.png);}
-.cboxIE6 #cboxBottomCenter{background:url(../jn-files/images/ie6/borderBottomCenter.png);}
-.cboxIE6 #cboxBottomRight{background:url(../jn-files/images/ie6/borderBottomRight.png);}
-.cboxIE6 #cboxMiddleLeft{background:url(../jn-files/images/ie6/borderMiddleLeft.png);}
-.cboxIE6 #cboxMiddleRight{background:url(../jn-files/images/ie6/borderMiddleRight.png);}
-
-.cboxIE6 #cboxTopLeft,
-.cboxIE6 #cboxTopCenter,
-.cboxIE6 #cboxTopRight,
-.cboxIE6 #cboxBottomLeft,
-.cboxIE6 #cboxBottomCenter,
-.cboxIE6 #cboxBottomRight,
-.cboxIE6 #cboxMiddleLeft,
-.cboxIE6 #cboxMiddleRight {
-    _behavior: expression(this.src = this.src ? this.src : this.currentStyle.backgroundImage.split('"')[1], this.style.background = "none", this.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=" + this.src + ", sizingMethod='scale')");
-}
-*/

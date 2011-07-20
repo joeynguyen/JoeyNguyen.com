@@ -1,11 +1,14 @@
 $(document).ready(function() {
 
+	$('#js-yes').removeClass('hide');
+	$('#js-no').remove();
+
 /* VALIDATE FORM */
-	
 	$("#commentForm").validate( {
 		rules: {
 		  name: {
 			required: true,
+			minlength: 2
 		  },
 		  email: {
 			required: true,
@@ -13,6 +16,9 @@ $(document).ready(function() {
 		  },
 		  website: {
 			url: true
+		  },
+		  message: {
+			minlength: 10
 		  }
 		},
 		success: function(label) {
@@ -21,7 +27,6 @@ $(document).ready(function() {
   	});
 
 /* FORM EASING */
-	
 	$('#commentForm a').toggle(function() {
 		$('#commentForm').animate({'right':'0'}, 2000, 'easeOutElastic');
 		$('.soundOn').hide();
@@ -35,7 +40,6 @@ $(document).ready(function() {
 	$('#commentForm').removeClass('slideOut');
 
 /* AJAX TAB LOADING */
-
 	$('#tabs ul a').click(function(e) {
 		var url = $(this).attr('href') + ' #single-tab';
 		$('#tab-content').load(url);
@@ -44,9 +48,7 @@ $(document).ready(function() {
 		e.preventDefault();
 	});
 
-
 /* MAC TABS IMAGES HOVER */
-
 	$('a.hover').live({
 		mouseenter:
 		function(e){
@@ -70,7 +72,6 @@ $(document).ready(function() {
 	});
 */
 /* LIGHTBOX - YOUTUBE VIDEOS */
-
 	$(".yt").live('click', function() {
 		url = this.href;
 		$.fn.colorbox({href: url, iframe:true, innerWidth:595, innerHeight:371});
@@ -78,7 +79,6 @@ $(document).ready(function() {
 	});
 
 /* KEYBOARD */
-	
 	var soundButton = 	'<img class="soundOn" src="jn-files/soundOn.png" />\
 						<img class="soundOff" src="jn-files/soundOff.png" />';
 
@@ -147,10 +147,6 @@ $(document).ready(function() {
 			}, 200);
 		}
 
-		/* prevent first letters in other links from highlighting */
-		if ($(vv).hasClass("pressed")) {
-			$(gg).removeClass("pressed");
-		}
 	});
 
 	$(document).keypress(function(e) {
